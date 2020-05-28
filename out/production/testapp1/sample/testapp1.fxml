@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="666.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="308.0" layoutY="23.0" prefHeight="488.0" prefWidth="318.0" style="-fx-background-color: #ffff; -fx-background-radius: 20;" AnchorPane.leftAnchor="308.0">
+         <children>
+            <Label layoutX="33.0" layoutY="14.0" text="Calculator">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="diameter" layoutX="208.0" layoutY="125.0" onKeyReleased="#runCalc" prefHeight="25.0" prefWidth="66.0" promptText="Diameter" />
+            <TextField fx:id="length" layoutX="208.0" layoutY="164.0" onKeyReleased="#runCalc" prefHeight="25.0" prefWidth="66.0" promptText="Length" />
+            <Label layoutX="35.0" layoutY="76.0" prefHeight="37.0" prefWidth="191.0" text="Fill in the following values :-">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="55.0" text="Now to get started">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="thickness" layoutX="208.0" layoutY="204.0" onKeyReleased="#runCalc" prefHeight="25.0" prefWidth="66.0" promptText="Thickness" />
+            <Label layoutX="40.0" layoutY="243.0" prefHeight="17.0" prefWidth="164.0" text="Formula to be used :-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="128.0" prefHeight="20.0" prefWidth="114.0" text="Shell Diameter  :-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="167.0" prefHeight="20.0" prefWidth="114.0" text="Shell Length      :-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="207.0" prefHeight="20.0" prefWidth="114.0" text="Shell Thickness  :-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="339.0" prefHeight="20.0" prefWidth="60.0" text="Cost / kg" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="216.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="308.0" prefHeight="20.0" prefWidth="60.0" text="Result" AnchorPane.leftAnchor="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="455.0" prefHeight="20.0" prefWidth="66.0" text="Total Cost" AnchorPane.leftAnchor="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="366.0" prefHeight="44.0" prefWidth="99.0" text="Fabrication Weight (Wt,kg)" wrapText="true" AnchorPane.leftAnchor="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="378.0" prefHeight="20.0" prefWidth="12.0" text=":-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="308.0" prefHeight="20.0" prefWidth="12.0" text=":-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="338.0" prefHeight="20.0" prefWidth="12.0" text=":-" AnchorPane.bottomAnchor="125.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="22.0" layoutY="257.0" prefHeight="20.0" prefWidth="284.0" />
+            <Separator layoutX="22.0" layoutY="287.0" prefHeight="25.0" prefWidth="284.0" />
+            <TextField fx:id="result" editable="false" layoutX="208.0" layoutY="306.0" prefHeight="25.0" prefWidth="66.0" promptText="Wt/kg" />
+            <TextField fx:id="costkg" layoutX="208.0" layoutY="336.0" onKeyReleased="#runCalc" prefHeight="25.0" prefWidth="66.0" AnchorPane.bottomAnchor="121.0" />
+            <TextField fx:id="fabw" layoutX="208.0" layoutY="376.0" prefHeight="25.0" prefWidth="66.0" />
+            <TextField fx:id="tcost" layoutX="208.0" layoutY="452.0" prefHeight="25.0" prefWidth="66.0" />
+            <Label layoutX="168.0" layoutY="456.0" text=":-" />
+            <Label layoutX="48.0" layoutY="420.0" prefHeight="20.0" prefWidth="60.0" text="Quantity" AnchorPane.leftAnchor="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantity" layoutX="208.0" layoutY="417.0" onKeyReleased="#runCalc" prefHeight="25.0" prefWidth="66.0" />
+            <Label layoutX="166.0" layoutY="420.0" prefHeight="20.0" prefWidth="12.0" text=":-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="6.0" prefHeight="523.0" prefWidth="335.0" style="-fx-background-color: linear-gradient(to right top, #4e204b, #9c2d50, #d25a34, #dba000, #a8eb12); -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="113.0" layoutY="190.0" prefHeight="69.0" prefWidth="107.0" text="Cal-C" textFill="#e8e8e8">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="265.0" prefHeight="25.0" prefWidth="176.0" text="A calculation based app" textFill="#f5f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="141.0" prefHeight="37.0" prefWidth="39.0" text="#1" textFill="#f2f2f2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
